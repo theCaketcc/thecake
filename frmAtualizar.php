@@ -18,10 +18,10 @@
         
         <form action="atualizarUsuario.php" method="post">
            Nome: <input type="text" name="nome" required  value="<?php echo $usuarios['NOME_USUARIO'] ?>"> <br/>
-           Email: <input type="password" name="email" required value="<?php echo $usuarios['EMAIL_USUARIO']?>"> <br/>
-           Confirme Email: <input type="email" name="confemail" required> <br/> 
-           Senha: <input type="text" name="senha" required="" value="<?php echo $usuarios['SENHA_USUARIO']?>"> <br/>
-           Confirme Senha: <input type="text" name="confsenha" required> <br/>
+           Email: <input type="email" name="email" required value="<?php echo $usuarios['EMAIL_USUARIO']?>"> <br/>
+           Confirme Email: <input type="email" name="confemail" required value="<?php echo $usuarios['EMAIL_USUARIO']?>"> <br/>
+           Senha: <input type="password" name="senha" required="" value="<?php echo $usuarios['SENHA_USUARIO']?>"> <br/>
+           Confirme Senha: <input type="password" name="confsenha" required value="<?php echo $usuarios['SENHA_USUARIO']; ?>"/><br/>
            <input type="submit" value="Atualizar" >
            </form>
         
