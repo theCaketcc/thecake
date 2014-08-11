@@ -3,10 +3,7 @@
 	<head>
 		<title>Novo Usuário</title>
                 <meta charset="UTF-8">
-	        <!--<meta HTTP-EQUIV="refresh" CONTENT="1">-->
-		<!-- Inclus�o do Jquery -->
-		<!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js" ></script>-->
-                <script type="text/javascript" src="js/jquery.min.js"></script>
+	        <script type="text/javascript" src="js/jquery.min.js"></script>
 		<!-- Inclus�o do Jquery Validate -->
 		<!--<script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery.validate/1.6/jquery.validate.js" ></script>-->
                 <script type="text/javascript" src="js/validate.js"></script>
@@ -100,19 +97,17 @@
 <form id="meu_form" action="novoUsuario.php" method="post" >
            
 		<!--Login:<br />-->
-                <label>Digite um Nome</label><br/>
+                <label>Digite o Nome:</label><br/>
                 <input type="text" name="nome" id="nome" />
 		<br />
-                <label>Digite um Email válido</label><br/>
-                <input type="text" name="login" id="login" />
+                <label>Digite o Email</label><br/>
+                <input type="text" name="email" id="email" />
 		<br />
-                  <label>Confirme o  email</label><br/>
-                <input type="text" name="conflogin" id="conflogin" />
-		<br />
-		Senha:<br />
+                Senha:<br />
 		<input type="password" name="senha" id="senha"/><br />
                 <label>Confirme a Senha</label><br/>
-		<input type="password" name="confsenha" id="confsenha"/><br />
+		<input type="password" name="confirmesenha" id="confsenha"/><br />
+                 
                 Aceito os termos e condições:<br />
 		<input type="checkbox" name="termos" id="termos"><br />
 		<input type="submit" value="Cadastrar" />
